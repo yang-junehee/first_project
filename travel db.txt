@@ -1,0 +1,225 @@
+DROP TABLE TRAVELLIST;
+DROP TABLE K_TRAVELLIST;
+
+CREATE TABLE TRAVELLIST(
+    COUNTRY       NVARCHAR2(10),
+    CITY          NVARCHAR2(10),
+    ATTRACTION    NVARCHAR2(20),
+    RECOMMENDNUM1 NVARCHAR2(2),
+    RECOMMENDNUM2 NVARCHAR2(2),
+    RECOMMENDNUM3 NVARCHAR2(2)
+);
+
+CREATE TABLE K_TRAVELLIST(
+    K_LORD          NVARCHAR2(10),
+    K_CITY          NVARCHAR2(10),
+    K_ATTRACTION    NVARCHAR2(20),
+    K_RECOMMENDNUM1 NVARCHAR2(2),
+    K_RECOMMENDNUM2 NVARCHAR2(2),
+    K_RECOMMENDNUM3 NVARCHAR2(2)
+);
+
+
+
+
+
+
+
+------------------------------------[해외]---------------------------------------
+INSERT INTO TRAVELLIST VALUES('중국','마카오','시티오브드림스','1','1','1');
+INSERT INTO TRAVELLIST VALUES('인도네시아','자카르타','모나스광장','1','1','1');
+INSERT INTO TRAVELLIST VALUES('대만','가오슝','용호탑','1','1','1');
+
+INSERT INTO TRAVELLIST VALUES('스페인','마드리드','마요르광장','2','1','1');
+INSERT INTO TRAVELLIST VALUES('이탈리아','로마','콜로세움','2','1','1');
+INSERT INTO TRAVELLIST VALUES('독일','뮌헨','님펜부르그 궁전','2','1','1');
+
+INSERT INTO TRAVELLIST VALUES('뉴질랜드','웰링턴','올드세인트폴 성당','3','1','1');
+INSERT INTO TRAVELLIST VALUES('뉴질랜드','오클랜드','비아덕트 하버','3','1','1');
+INSERT INTO TRAVELLIST VALUES('호주','골드코스트','골드코스트','3','1','1');
+
+INSERT INTO TRAVELLIST VALUES('아르헨티나','부에노스아이레스','라 보카','4','1','1');
+INSERT INTO TRAVELLIST VALUES('멕시코','멕시코시티','알라메다 공원','4','1','1');
+INSERT INTO TRAVELLIST VALUES('아르헨티나','바릴로체','빅토리아 섬','4','1','1');
+
+INSERT INTO TRAVELLIST VALUES('캐나다','벤쿠버','스탠리 공원','5','1','1');
+INSERT INTO TRAVELLIST VALUES('캐나다','오타와','리도운하','5','1','1');
+INSERT INTO TRAVELLIST VALUES('미국','플로리다','키웨스트','5','1','1');
+
+INSERT INTO TRAVELLIST VALUES('이집트','카이로','공중교회','6','1','1');
+INSERT INTO TRAVELLIST VALUES('튀니지','시디 부 사이드','카페 델 엘리스','6','1','1');
+INSERT INTO TRAVELLIST VALUES('모로코','마라케쉬','제마엘프나 광장','6','1','1');
+
+INSERT INTO TRAVELLIST VALUES('인도네시아','발리','덴파사르','1','1','2');
+INSERT INTO TRAVELLIST VALUES('일본','후쿠오카','모모치 해변','1','1','2');
+INSERT INTO TRAVELLIST VALUES('터키','카파도키아','지하도시','1','1','2');
+
+INSERT INTO TRAVELLIST VALUES('프랑스','니스','니스해변','2','1','2');
+INSERT INTO TRAVELLIST VALUES('스위스','베른','장미공원','2','1','2');
+INSERT INTO TRAVELLIST VALUES('이탈리아','베네치아','무라노 섬','2','1','2');
+
+INSERT INTO TRAVELLIST VALUES('호주','누사','선샤인비치','3','1','2');
+INSERT INTO TRAVELLIST VALUES('피지','피지','피지섬 투어','3','1','2');
+INSERT INTO TRAVELLIST VALUES('뉴질랜드','오클랜드','원 트리 힐','3','1','2');
+
+INSERT INTO TRAVELLIST VALUES('아르헨티나','파라나 고원','이과수폭포','4','1','2');
+INSERT INTO TRAVELLIST VALUES('멕시코','멕시코시티','테오티우아칸','4','1','2');
+INSERT INTO TRAVELLIST VALUES('아르헨티나','우수아이아','세상의 끝','4','1','2');
+
+INSERT INTO TRAVELLIST VALUES('미국','괌','피씨아이 마린파크','5','1','2');
+INSERT INTO TRAVELLIST VALUES('미국','하와이','알라모아나 쇼핑센터','5','1','2');
+INSERT INTO TRAVELLIST VALUES('미국','달라스','캔디토피아','5','1','2');
+
+INSERT INTO TRAVELLIST VALUES('남아프리카공화국','케이프타운','물개섬','6','1','2');
+INSERT INTO TRAVELLIST VALUES('나이지라아','니제르','주마록','6','1','2');
+INSERT INTO TRAVELLIST VALUES('짐바브웨','하라레','빅토리아폭포','6','1','2');
+
+INSERT INTO TRAVELLIST VALUES('중국','상하이','동방명주','1','2','1');
+INSERT INTO TRAVELLIST VALUES('인도네시아','욕야카르타','우센셀탈루 박물관','1','2','1');
+INSERT INTO TRAVELLIST VALUES('일본','오사카','유니버셜스튜디오','1','2','1');
+
+INSERT INTO TRAVELLIST VALUES('영국','런던','버킹엄 궁전','2','2','1');
+INSERT INTO TRAVELLIST VALUES('헝가리','부다페스트','어부의 요새','2','2','1');
+INSERT INTO TRAVELLIST VALUES('리투아니아','빌뉴스','새벽의 문','2','2','1');
+
+INSERT INTO TRAVELLIST VALUES('호주','시드니','블릿지클라임','3','2','1');
+INSERT INTO TRAVELLIST VALUES('뉴질랜드','오클랜드','퀸스트리트','3','2','1');
+INSERT INTO TRAVELLIST VALUES('바투아트','포트빌라','밀레폭포','3','2','1');
+
+INSERT INTO TRAVELLIST VALUES('브라질','브라질리아','쿠비체크 대통령상','4','2','1');
+INSERT INTO TRAVELLIST VALUES('쿠바','아바나','옛시가지','4','2','1');
+INSERT INTO TRAVELLIST VALUES('페루','리마','아르마스 광장','4','2','1');
+
+INSERT INTO TRAVELLIST VALUES('미국','뉴욕','자유의 여신상','5','2','1');
+INSERT INTO TRAVELLIST VALUES('미국','LA','디즈니랜드','5','2','1');
+INSERT INTO TRAVELLIST VALUES('미국','시카고','시카고미술관','5','2','1');
+
+INSERT INTO TRAVELLIST VALUES('남아프리카공화국','케이프타운','체프만스 피크','6','2','1');
+INSERT INTO TRAVELLIST VALUES('세네갈','다카르','다카르시장','6','2','1');
+INSERT INTO TRAVELLIST VALUES('이집트','알렉산드리아','몬타자 궁전','6','2','1');
+
+INSERT INTO TRAVELLIST VALUES('베트남','다낭','호이안 바구니배','1','2','2');
+INSERT INTO TRAVELLIST VALUES('라오스','비엔티안','비엔티안 야시장','1','2','2');
+INSERT INTO TRAVELLIST VALUES('몰디브','말레','말레시티','1','2','2');
+
+INSERT INTO TRAVELLIST VALUES('프랑스','파리','에펠탑','2','2','2');
+INSERT INTO TRAVELLIST VALUES('스페인','발렌시아','오세아노 그라픽','2','2','2');
+INSERT INTO TRAVELLIST VALUES('아일랜드','더블린','더블린성','2','2','2');
+
+INSERT INTO TRAVELLIST VALUES('호주','빅토리아','그레이트 오션로드','3','2','2');
+INSERT INTO TRAVELLIST VALUES('뉴질랜드','오클랜드','다카푸나비치','3','2','2');
+INSERT INTO TRAVELLIST VALUES('호주','골드코스트','거럼빈 야생동물 공원','3','2','2');
+
+INSERT INTO TRAVELLIST VALUES('콜롬비아','보고타','몬세라떼언덕','4','2','2');
+INSERT INTO TRAVELLIST VALUES('칠레','산티아고','산타루시아언덕','4','2','2');
+INSERT INTO TRAVELLIST VALUES('볼리비아','우유니','우유니사막','4','2','2');
+
+INSERT INTO TRAVELLIST VALUES('미국','워싱턴','백악관','5','2','2');
+INSERT INTO TRAVELLIST VALUES('미국','라스베가스','코스모폴리탄카지노','5','2','2');
+INSERT INTO TRAVELLIST VALUES('알래스카','앵커리지','개썰매','5','2','2');
+
+INSERT INTO TRAVELLIST VALUES('이집트','카이로','기자 피라마드','6','2','2');
+INSERT INTO TRAVELLIST VALUES('마다가스카르','베코파카','칭기 국립공원','6','2','2');
+INSERT INTO TRAVELLIST VALUES('케냐','나이로비','쉘드릭 오퍼니지','6','2','2');
+
+
+
+------------------------------------[국내]---------------------------------------
+INSERT INTO K_TRAVELLIST VALUES('충청도', '단양', '패러글라이딩', '4', '2', '2');
+INSERT INTO K_TRAVELLIST VALUES('충청도', '아산', '레일바이크와 스카이로드', '4', '2', '2');
+INSERT INTO K_TRAVELLIST VALUES('충청도', '문경', '에코랄라', '4', '2', '2');
+
+INSERT INTO K_TRAVELLIST VALUES('충청도', '부여', '궁남지', '4', '2', '1');
+INSERT INTO K_TRAVELLIST VALUES('충청도', '당진', '아이미술관', '4', '2', '1');
+INSERT INTO K_TRAVELLIST VALUES('충청도', '청주', '동부창고', '4', '2', '1');
+
+INSERT INTO K_TRAVELLIST VALUES('충청도', '보령', '개화예술공원', '4', '1', '2');
+INSERT INTO K_TRAVELLIST VALUES('충청도', '아산', '죽산낚시터', '4', '1', '2');
+INSERT INTO K_TRAVELLIST VALUES('충청도', '태안', '신두리해안사구', '4', '1', '2');
+
+INSERT INTO K_TRAVELLIST VALUES('충청도', '청주', '숲속갤러리와 야외정원', '4', '1', '1');
+INSERT INTO K_TRAVELLIST VALUES('충청도', '아산', '온천 관광특구', '4', '1', '1');
+INSERT INTO K_TRAVELLIST VALUES('충청도', '보령', '대천해수욕', '4', '1', '1');
+
+INSERT INTO K_TRAVELLIST VALUES('경상도', '남해', '상상양떼목장과 편백숲', '6', '1', '2');
+INSERT INTO K_TRAVELLIST VALUES('경상도', '경주', '화랑의 언덕', '6', '1', '2');
+INSERT INTO K_TRAVELLIST VALUES('경상도', '통영', '연화도', '6', '1', '2');
+
+INSERT INTO K_TRAVELLIST VALUES('경상도', '거제', 'ATV', '6', '2', '2');
+INSERT INTO K_TRAVELLIST VALUES('경상도', '경주', '동궁과 월지', '6', '2', '2');
+INSERT INTO K_TRAVELLIST VALUES('경상도', '부산', '아홉산 숲', '6', '2', '2');
+
+INSERT INTO K_TRAVELLIST VALUES('경상도', '울산', '신화마을', '6', '2', '1');
+INSERT INTO K_TRAVELLIST VALUES('경상도', '부산', '가야테마파크', '6', '2', '1');
+INSERT INTO K_TRAVELLIST VALUES('경상도', '영덕', '영덕대게거리', '6', '2', '1');
+
+INSERT INTO K_TRAVELLIST VALUES('경상도', '경주', '솔거미술관', '6', '1', '1');
+INSERT INTO K_TRAVELLIST VALUES('경상도', '부산', '죽성드림세트장', '6', '1', '1');
+INSERT INTO K_TRAVELLIST VALUES('경상도', '부산', '구름속의 산책', '6', '1', '1');
+
+INSERT INTO K_TRAVELLIST VALUES('수도권', '수원', '방화수류정', '1', '1', '1');
+INSERT INTO K_TRAVELLIST VALUES('수도권', '일산', '호수공원', '1', '1', '1');
+INSERT INTO K_TRAVELLIST VALUES('수도권', '잠실', '석촌호수', '1', '1', '1');
+
+INSERT INTO K_TRAVELLIST VALUES('수도권', '상암', '하늘공원', '1', '1', '2');
+INSERT INTO K_TRAVELLIST VALUES('수도권', '종로', '낙산공원', '1', '1', '2');
+INSERT INTO K_TRAVELLIST VALUES('수도권', '을왕', '을왕리해수욕장', '1', '1', '2');
+
+INSERT INTO K_TRAVELLIST VALUES('수도권', '삼청', '삼청동길', '1', '2', '1');
+INSERT INTO K_TRAVELLIST VALUES('수도권', '송월', '동화마을', '1', '2', '1');
+INSERT INTO K_TRAVELLIST VALUES('수도권', '잠실', '롯데월드', '1', '2', '1');
+
+INSERT INTO K_TRAVELLIST VALUES('수도권', '강화', '씨사이드리조트 루지', '1', '2', '2');
+INSERT INTO K_TRAVELLIST VALUES('수도권', '가평', '열기구', '1', '2', '2');
+INSERT INTO K_TRAVELLIST VALUES('수도권', '중랑', '캠핑숲 포레스트어드벤처', '1', '2', '2');
+
+INSERT INTO K_TRAVELLIST VALUES('강원도', '춘천', '산토리니', '2', '1', '1');
+INSERT INTO K_TRAVELLIST VALUES('강원도', '강릉', '초당순두부마을', '2', '1', '1');
+INSERT INTO K_TRAVELLIST VALUES('강원도', '평창', '켄싱턴플로라호텔', '2', '1', '1');
+
+INSERT INTO K_TRAVELLIST VALUES('강원도', '춘천', '제이드가든', '2', '1', '2');
+INSERT INTO K_TRAVELLIST VALUES('강원도', '강릉', '오죽헌', '2', '1', '2');
+INSERT INTO K_TRAVELLIST VALUES('강원도', '평창', '오대산월정사전나무숲길', '2', '1', '2');
+
+INSERT INTO K_TRAVELLIST VALUES('강원도', '춘천', '김유정레일바이크', '2', '2', '1');
+INSERT INTO K_TRAVELLIST VALUES('강원도', '평창', '알파인코스터', '2', '2', '1');
+INSERT INTO K_TRAVELLIST VALUES('강원도', '정선', '병방치스카이워크', '2', '2', '1');
+
+INSERT INTO K_TRAVELLIST VALUES('강원도', '대관령', '양떼목장', '2', '2', '2');
+INSERT INTO K_TRAVELLIST VALUES('강원도', '강릉', '사근진해변', '2', '2', '2');
+INSERT INTO K_TRAVELLIST VALUES('강원도', '인제', '설악산 국립공원', '2', '2', '2');
+
+INSERT INTO K_TRAVELLIST VALUES('전라도', '목포', '평화광장바다분수', '3', '1', '1');
+INSERT INTO K_TRAVELLIST VALUES('전라도', '고흥', '소록도', '3', '1', '1');
+INSERT INTO K_TRAVELLIST VALUES('전라도', '담양', '메타프로방스', '3', '1', '1');
+
+INSERT INTO K_TRAVELLIST VALUES('전라도', '순천', '순천만국가정원', '3', '1', '2');
+INSERT INTO K_TRAVELLIST VALUES('전라도', '담양', '죽녹원', '3', '1', '2');
+INSERT INTO K_TRAVELLIST VALUES('전라도', '완도', '완도수목원', '3', '1', '2');
+
+INSERT INTO K_TRAVELLIST VALUES('전라도', '전주', '한옥마을', '3', '2', '1');
+INSERT INTO K_TRAVELLIST VALUES('전라도', '군산', '경암동 철길마을', '3', '2', '1');
+INSERT INTO K_TRAVELLIST VALUES('전라도', '완도', '완도타워', '3', '2', '1');
+
+INSERT INTO K_TRAVELLIST VALUES('전라도', '곡성', '패러글라이딩', '3', '2', '2');
+INSERT INTO K_TRAVELLIST VALUES('전라도', '무주', '래프팅', '3', '2', '2');
+INSERT INTO K_TRAVELLIST VALUES('전라도', '영암', '월출산', '3', '2', '2');
+
+INSERT INTO K_TRAVELLIST VALUES('제주도','제주시','애월해변','5','1','2');
+INSERT INTO K_TRAVELLIST VALUES('제주도','제주시','함덕해변','5','1','2');
+INSERT INTO K_TRAVELLIST VALUES('제주도','제주시','세화해변','5','1','2');
+
+INSERT INTO K_TRAVELLIST VALUES('제주도','제주시','한라수목원테마파크','5','1','1');
+INSERT INTO K_TRAVELLIST VALUES('제주도','제주시','카페델문도','5','1','1');
+INSERT INTO K_TRAVELLIST VALUES('제주도','제주시','풍림다방','5','1','1');
+
+INSERT INTO K_TRAVELLIST VALUES('제주도','제주시','동문시장','5','2','1');
+INSERT INTO K_TRAVELLIST VALUES('제주도','서귀포시','박물관은 살아있다','5','2','1');
+INSERT INTO K_TRAVELLIST VALUES('제주도','서귀포시','오설록 티뮤지엄','5','2','1');
+
+INSERT INTO K_TRAVELLIST VALUES('제주도','서귀포시','마라도','5','2','2');
+INSERT INTO K_TRAVELLIST VALUES('제주도','서귀포시','한라산','5','2','2');
+INSERT INTO K_TRAVELLIST VALUES('제주도','제주시','우도','5','2','2');
+commit;
+
+
